@@ -1,0 +1,955 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3CD176FB26E1566800D82EB8 /* AcronymSearchBarServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD176FA26E1566800D82EB8 /* AcronymSearchBarServices.swift */; };
+		3CD1770726E15E4900D82EB8 /* AcronymSearchPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD1770626E15E4900D82EB8 /* AcronymSearchPresenterTest.swift */; };
+		3CD1770C26E15EB200D82EB8 /* AcronymSearchInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD1770B26E15EB200D82EB8 /* AcronymSearchInteractorMock.swift */; };
+		3CD1771426E161C600D82EB8 /* MockEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD1771326E161C600D82EB8 /* MockEnums.swift */; };
+		3CD1773726E16D1500D82EB8 /* AcronymSearchControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD1773626E16D1500D82EB8 /* AcronymSearchControllerMock.swift */; };
+		3CD1773C26E1748300D82EB8 /* AcronymSearchInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD1773B26E1748300D82EB8 /* AcronymSearchInteractorTest.swift */; };
+		3CD1774126E1755A00D82EB8 /* AcronymSearchRepositoryContainerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD1774026E1755A00D82EB8 /* AcronymSearchRepositoryContainerMock.swift */; };
+		3CD1774626E180E800D82EB8 /* AcronymSearchPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD1774526E180E800D82EB8 /* AcronymSearchPresenterMock.swift */; };
+		3CD1774B26E1909800D82EB8 /* AcronymSearchRepositoryContainerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD1774A26E1909800D82EB8 /* AcronymSearchRepositoryContainerTest.swift */; };
+		3CD1775026E1919E00D82EB8 /* AcronymSearchRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD1774F26E1919E00D82EB8 /* AcronymSearchRepositoryMock.swift */; };
+		3CD1775526E19AF900D82EB8 /* AcronymSearchRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD1775426E19AF900D82EB8 /* AcronymSearchRepositoryTest.swift */; };
+		3CD1775A26E19BD900D82EB8 /* AcronymSearchRemoteDatastoreMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD1775926E19BD900D82EB8 /* AcronymSearchRemoteDatastoreMock.swift */; };
+		3CD1775F26E1EFB400D82EB8 /* AcronymAPIHandlerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD1775E26E1EFB400D82EB8 /* AcronymAPIHandlerMock.swift */; };
+		3CD1776426E204B800D82EB8 /* AcronymSearchRemoteDataStoreTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD1776326E204B800D82EB8 /* AcronymSearchRemoteDataStoreTest.swift */; };
+		3CD1776926E2105F00D82EB8 /* AcronymSearchRemoteDataMapperTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD1776826E2105F00D82EB8 /* AcronymSearchRemoteDataMapperTest.swift */; };
+		3CD1776E26E231D500D82EB8 /* APIURLRequestCreaterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD1776D26E231D500D82EB8 /* APIURLRequestCreaterTest.swift */; };
+		3CD1777326E2482D00D82EB8 /* MockAPIConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD1777226E2482D00D82EB8 /* MockAPIConfigurator.swift */; };
+		3CD1777826E2676000D82EB8 /* AcronymAPIHandlerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD1777726E2676000D82EB8 /* AcronymAPIHandlerTest.swift */; };
+		3CD1777D26E29CE600D82EB8 /* AcronymSearchUrlSessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD1777C26E29CE600D82EB8 /* AcronymSearchUrlSessionMock.swift */; };
+		3CD1778226E29E8D00D82EB8 /* URLSessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD1778126E29E8D00D82EB8 /* URLSessionMock.swift */; };
+		3CE8862526D92498001635FB /* AcronymSearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE8861F26D92498001635FB /* AcronymSearchPresenter.swift */; };
+		3CE8862726D92498001635FB /* AcronymSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE8862126D92498001635FB /* AcronymSearchViewController.swift */; };
+		3CE8862826D92499001635FB /* AcronymSearchBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE8862226D92498001635FB /* AcronymSearchBuilder.swift */; };
+		3CE8862926D92499001635FB /* AcronymSearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE8862326D92498001635FB /* AcronymSearchInteractor.swift */; };
+		3CE8862A26D92499001635FB /* AcronymSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE8862426D92498001635FB /* AcronymSearchView.swift */; };
+		3CE8864026D931F3001635FB /* AcronymSearchTableViewServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE8863F26D931F3001635FB /* AcronymSearchTableViewServices.swift */; };
+		3CE8864A26D93584001635FB /* NSViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE8864926D93584001635FB /* NSViewExtension.swift */; };
+		3CE8865126D93764001635FB /* AcronymSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE8864F26D93764001635FB /* AcronymSearchCell.swift */; };
+		3CE8865226D93764001635FB /* AcronymSearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CE8865026D93764001635FB /* AcronymSearchCell.xib */; };
+		3CE8865C26D94C09001635FB /* AcronymSearchRepositoryContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE8865B26D94C09001635FB /* AcronymSearchRepositoryContainer.swift */; };
+		3CE8866526D94D31001635FB /* AcronymSearchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE8866426D94D31001635FB /* AcronymSearchRepository.swift */; };
+		3CE8866E26D94E94001635FB /* AcronymSearchRepositoryContainerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE8866D26D94E94001635FB /* AcronymSearchRepositoryContainerFactory.swift */; };
+		3CE8869726DA23A4001635FB /* AcronymSearchRepositoryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE8869626DA23A4001635FB /* AcronymSearchRepositoryFactory.swift */; };
+		3CE8869D26DA4203001635FB /* AcronymSearchRemoteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE8869C26DA4203001635FB /* AcronymSearchRemoteStore.swift */; };
+		3CE886A926DA62CE001635FB /* AcronymAPIHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE886A826DA62CE001635FB /* AcronymAPIHandlerProtocol.swift */; };
+		3CE886C426DA6BB5001635FB /* Mappables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE886C326DA6BB5001635FB /* Mappables.swift */; };
+		3CE886CA26DA6D88001635FB /* Usable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE886C926DA6D88001635FB /* Usable.swift */; };
+		3CE886D226DA6DA2001635FB /* Parsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE886D126DA6DA2001635FB /* Parsable.swift */; };
+		3CE886DA26DA6F3C001635FB /* APIRequestExecuter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE886D926DA6F3C001635FB /* APIRequestExecuter.swift */; };
+		3CE886DF26DA7940001635FB /* AcronymAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE886DE26DA7940001635FB /* AcronymAPIHandler.swift */; };
+		3CE886E726DA804A001635FB /* AcronymsParsableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE886E426DA804A001635FB /* AcronymsParsableModel.swift */; };
+		3CE886F826DA81DF001635FB /* AcronymsUsablesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE886F726DA81DF001635FB /* AcronymsUsablesModel.swift */; };
+		3CE8870926DA9786001635FB /* APIConfigurableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE8870826DA9786001635FB /* APIConfigurableProtocol.swift */; };
+		3CE8876C26DAD16A001635FB /* AcronymSearchRequestCreater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE8876B26DAD16A001635FB /* AcronymSearchRequestCreater.swift */; };
+		3CE8877226DAD306001635FB /* AcronymSearchParamater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE8877126DAD306001635FB /* AcronymSearchParamater.swift */; };
+		3CE8878D26DB847A001635FB /* AcronymSearchRemoteDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE8878C26DB847A001635FB /* AcronymSearchRemoteDataMapper.swift */; };
+		3CE8879526DBB2E6001635FB /* APIURLRequestCreater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE8879426DBB2E6001635FB /* APIURLRequestCreater.swift */; };
+		3CE8879A26DBB340001635FB /* UrlRequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE8879926DBB340001635FB /* UrlRequestError.swift */; };
+		3CE8879F26DBB3BA001635FB /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE8879E26DBB3BA001635FB /* StringExtension.swift */; };
+		3CE887A426DBCA5E001635FB /* APIResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE887A326DBCA5E001635FB /* APIResponseParser.swift */; };
+		3CEF7D7226D9230F00C5EEBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF7D7126D9230F00C5EEBC /* AppDelegate.swift */; };
+		3CEF7D7426D9230F00C5EEBC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF7D7326D9230F00C5EEBC /* SceneDelegate.swift */; };
+		3CEF7D7926D9230F00C5EEBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF7D7726D9230F00C5EEBC /* Main.storyboard */; };
+		3CEF7D7B26D9231200C5EEBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF7D7A26D9231200C5EEBC /* Assets.xcassets */; };
+		3CEF7D7E26D9231200C5EEBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF7D7C26D9231200C5EEBC /* LaunchScreen.storyboard */; };
+		3CEF7D9426D9231200C5EEBC /* AcronymApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF7D9326D9231200C5EEBC /* AcronymApplicationUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3CEF7D8526D9231200C5EEBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CEF7D6626D9230F00C5EEBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CEF7D6D26D9230F00C5EEBC;
+			remoteInfo = AcronymApplication;
+		};
+		3CEF7D9026D9231200C5EEBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CEF7D6626D9230F00C5EEBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CEF7D6D26D9230F00C5EEBC;
+			remoteInfo = AcronymApplication;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3CD176FA26E1566800D82EB8 /* AcronymSearchBarServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymSearchBarServices.swift; sourceTree = "<group>"; };
+		3CD1770626E15E4900D82EB8 /* AcronymSearchPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymSearchPresenterTest.swift; sourceTree = "<group>"; };
+		3CD1770B26E15EB200D82EB8 /* AcronymSearchInteractorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymSearchInteractorMock.swift; sourceTree = "<group>"; };
+		3CD1771326E161C600D82EB8 /* MockEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockEnums.swift; sourceTree = "<group>"; };
+		3CD1773626E16D1500D82EB8 /* AcronymSearchControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymSearchControllerMock.swift; sourceTree = "<group>"; };
+		3CD1773B26E1748300D82EB8 /* AcronymSearchInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymSearchInteractorTest.swift; sourceTree = "<group>"; };
+		3CD1774026E1755A00D82EB8 /* AcronymSearchRepositoryContainerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymSearchRepositoryContainerMock.swift; sourceTree = "<group>"; };
+		3CD1774526E180E800D82EB8 /* AcronymSearchPresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymSearchPresenterMock.swift; sourceTree = "<group>"; };
+		3CD1774A26E1909800D82EB8 /* AcronymSearchRepositoryContainerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymSearchRepositoryContainerTest.swift; sourceTree = "<group>"; };
+		3CD1774F26E1919E00D82EB8 /* AcronymSearchRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymSearchRepositoryMock.swift; sourceTree = "<group>"; };
+		3CD1775426E19AF900D82EB8 /* AcronymSearchRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymSearchRepositoryTest.swift; sourceTree = "<group>"; };
+		3CD1775926E19BD900D82EB8 /* AcronymSearchRemoteDatastoreMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymSearchRemoteDatastoreMock.swift; sourceTree = "<group>"; };
+		3CD1775E26E1EFB400D82EB8 /* AcronymAPIHandlerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymAPIHandlerMock.swift; sourceTree = "<group>"; };
+		3CD1776326E204B800D82EB8 /* AcronymSearchRemoteDataStoreTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymSearchRemoteDataStoreTest.swift; sourceTree = "<group>"; };
+		3CD1776826E2105F00D82EB8 /* AcronymSearchRemoteDataMapperTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymSearchRemoteDataMapperTest.swift; sourceTree = "<group>"; };
+		3CD1776D26E231D500D82EB8 /* APIURLRequestCreaterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIURLRequestCreaterTest.swift; sourceTree = "<group>"; };
+		3CD1777226E2482D00D82EB8 /* MockAPIConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIConfigurator.swift; sourceTree = "<group>"; };
+		3CD1777726E2676000D82EB8 /* AcronymAPIHandlerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymAPIHandlerTest.swift; sourceTree = "<group>"; };
+		3CD1777C26E29CE600D82EB8 /* AcronymSearchUrlSessionMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymSearchUrlSessionMock.swift; sourceTree = "<group>"; };
+		3CD1778126E29E8D00D82EB8 /* URLSessionMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionMock.swift; sourceTree = "<group>"; };
+		3CE8861F26D92498001635FB /* AcronymSearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymSearchPresenter.swift; sourceTree = "<group>"; };
+		3CE8862126D92498001635FB /* AcronymSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymSearchViewController.swift; sourceTree = "<group>"; };
+		3CE8862226D92498001635FB /* AcronymSearchBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymSearchBuilder.swift; sourceTree = "<group>"; };
+		3CE8862326D92498001635FB /* AcronymSearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymSearchInteractor.swift; sourceTree = "<group>"; };
+		3CE8862426D92498001635FB /* AcronymSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymSearchView.swift; sourceTree = "<group>"; };
+		3CE8863F26D931F3001635FB /* AcronymSearchTableViewServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymSearchTableViewServices.swift; sourceTree = "<group>"; };
+		3CE8864926D93584001635FB /* NSViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSViewExtension.swift; sourceTree = "<group>"; };
+		3CE8864F26D93764001635FB /* AcronymSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymSearchCell.swift; sourceTree = "<group>"; };
+		3CE8865026D93764001635FB /* AcronymSearchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AcronymSearchCell.xib; sourceTree = "<group>"; };
+		3CE8865B26D94C09001635FB /* AcronymSearchRepositoryContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymSearchRepositoryContainer.swift; sourceTree = "<group>"; };
+		3CE8866426D94D31001635FB /* AcronymSearchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymSearchRepository.swift; sourceTree = "<group>"; };
+		3CE8866D26D94E94001635FB /* AcronymSearchRepositoryContainerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymSearchRepositoryContainerFactory.swift; sourceTree = "<group>"; };
+		3CE8869626DA23A4001635FB /* AcronymSearchRepositoryFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymSearchRepositoryFactory.swift; sourceTree = "<group>"; };
+		3CE8869C26DA4203001635FB /* AcronymSearchRemoteStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymSearchRemoteStore.swift; sourceTree = "<group>"; };
+		3CE886A826DA62CE001635FB /* AcronymAPIHandlerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymAPIHandlerProtocol.swift; sourceTree = "<group>"; };
+		3CE886C326DA6BB5001635FB /* Mappables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mappables.swift; sourceTree = "<group>"; };
+		3CE886C926DA6D88001635FB /* Usable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usable.swift; sourceTree = "<group>"; };
+		3CE886D126DA6DA2001635FB /* Parsable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parsable.swift; sourceTree = "<group>"; };
+		3CE886D926DA6F3C001635FB /* APIRequestExecuter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestExecuter.swift; sourceTree = "<group>"; };
+		3CE886DE26DA7940001635FB /* AcronymAPIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymAPIHandler.swift; sourceTree = "<group>"; };
+		3CE886E426DA804A001635FB /* AcronymsParsableModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcronymsParsableModel.swift; sourceTree = "<group>"; };
+		3CE886F726DA81DF001635FB /* AcronymsUsablesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymsUsablesModel.swift; sourceTree = "<group>"; };
+		3CE8870826DA9786001635FB /* APIConfigurableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfigurableProtocol.swift; sourceTree = "<group>"; };
+		3CE8876B26DAD16A001635FB /* AcronymSearchRequestCreater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymSearchRequestCreater.swift; sourceTree = "<group>"; };
+		3CE8877126DAD306001635FB /* AcronymSearchParamater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymSearchParamater.swift; sourceTree = "<group>"; };
+		3CE8878C26DB847A001635FB /* AcronymSearchRemoteDataMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymSearchRemoteDataMapper.swift; sourceTree = "<group>"; };
+		3CE8879426DBB2E6001635FB /* APIURLRequestCreater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIURLRequestCreater.swift; sourceTree = "<group>"; };
+		3CE8879926DBB340001635FB /* UrlRequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlRequestError.swift; sourceTree = "<group>"; };
+		3CE8879E26DBB3BA001635FB /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		3CE887A326DBCA5E001635FB /* APIResponseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponseParser.swift; sourceTree = "<group>"; };
+		3CEF7D6E26D9230F00C5EEBC /* AcronymApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AcronymApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CEF7D7126D9230F00C5EEBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3CEF7D7326D9230F00C5EEBC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3CEF7D7826D9230F00C5EEBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3CEF7D7A26D9231200C5EEBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3CEF7D7D26D9231200C5EEBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3CEF7D7F26D9231200C5EEBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CEF7D8426D9231200C5EEBC /* AcronymApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AcronymApplicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CEF7D8A26D9231200C5EEBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CEF7D8F26D9231200C5EEBC /* AcronymApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AcronymApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CEF7D9326D9231200C5EEBC /* AcronymApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymApplicationUITests.swift; sourceTree = "<group>"; };
+		3CEF7D9526D9231200C5EEBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CEF7D6B26D9230F00C5EEBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CEF7D8126D9231200C5EEBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CEF7D8C26D9231200C5EEBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C9A856A26DEA0990030A125 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				3CE8878C26DB847A001635FB /* AcronymSearchRemoteDataMapper.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		3C9A856B26DEA10C0030A125 /* AcronymNetworkServices */ = {
+			isa = PBXGroup;
+			children = (
+				3CE886A826DA62CE001635FB /* AcronymAPIHandlerProtocol.swift */,
+				3CE886DE26DA7940001635FB /* AcronymAPIHandler.swift */,
+				3CE8876B26DAD16A001635FB /* AcronymSearchRequestCreater.swift */,
+				3CE8877126DAD306001635FB /* AcronymSearchParamater.swift */,
+			);
+			path = AcronymNetworkServices;
+			sourceTree = "<group>";
+		};
+		3C9A856C26DEA1400030A125 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3CE8864926D93584001635FB /* NSViewExtension.swift */,
+				3CE8879E26DBB3BA001635FB /* StringExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		3CD176FF26E15D5F00D82EB8 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				3CD1770B26E15EB200D82EB8 /* AcronymSearchInteractorMock.swift */,
+				3CD1773626E16D1500D82EB8 /* AcronymSearchControllerMock.swift */,
+				3CD1774026E1755A00D82EB8 /* AcronymSearchRepositoryContainerMock.swift */,
+				3CD1774526E180E800D82EB8 /* AcronymSearchPresenterMock.swift */,
+				3CD1774F26E1919E00D82EB8 /* AcronymSearchRepositoryMock.swift */,
+				3CD1775926E19BD900D82EB8 /* AcronymSearchRemoteDatastoreMock.swift */,
+				3CD1775E26E1EFB400D82EB8 /* AcronymAPIHandlerMock.swift */,
+				3CD1777226E2482D00D82EB8 /* MockAPIConfigurator.swift */,
+				3CD1778126E29E8D00D82EB8 /* URLSessionMock.swift */,
+				3CD1777C26E29CE600D82EB8 /* AcronymSearchUrlSessionMock.swift */,
+				3CD1771326E161C600D82EB8 /* MockEnums.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		3CE8863526D926BF001635FB /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				3CE8862226D92498001635FB /* AcronymSearchBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		3CE8863626D926C7001635FB /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				3CE8862326D92498001635FB /* AcronymSearchInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		3CE8863726D926E0001635FB /* Presentor */ = {
+			isa = PBXGroup;
+			children = (
+				3CE8861F26D92498001635FB /* AcronymSearchPresenter.swift */,
+			);
+			path = Presentor;
+			sourceTree = "<group>";
+		};
+		3CE8863826D926ED001635FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3CE8864E26D93720001635FB /* Cell */,
+				3CE8862426D92498001635FB /* AcronymSearchView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3CE8863926D926F9001635FB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3CE8862126D92498001635FB /* AcronymSearchViewController.swift */,
+				3CE8863F26D931F3001635FB /* AcronymSearchTableViewServices.swift */,
+				3CD176FA26E1566800D82EB8 /* AcronymSearchBarServices.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3CE8863A26D92703001635FB /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				3CEF7D7726D9230F00C5EEBC /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		3CE8864E26D93720001635FB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3CE8864F26D93764001635FB /* AcronymSearchCell.swift */,
+				3CE8865026D93764001635FB /* AcronymSearchCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		3CE8865926D94BC4001635FB /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				3C9A856A26DEA0990030A125 /* Mapper */,
+				3CE886E326DA8033001635FB /* Parsables */,
+				3CE886F626DA8188001635FB /* Usables */,
+				3CE8869B26DA41CA001635FB /* RemoteDataLayer */,
+				3CE8866C26D94E6B001635FB /* Factory */,
+				3CE8866326D94C65001635FB /* Repository */,
+				3CE8865A26D94BE0001635FB /* RepositoryContainer */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		3CE8865A26D94BE0001635FB /* RepositoryContainer */ = {
+			isa = PBXGroup;
+			children = (
+				3CE8865B26D94C09001635FB /* AcronymSearchRepositoryContainer.swift */,
+			);
+			path = RepositoryContainer;
+			sourceTree = "<group>";
+		};
+		3CE8866326D94C65001635FB /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				3CE8866426D94D31001635FB /* AcronymSearchRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		3CE8866C26D94E6B001635FB /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				3CE8866D26D94E94001635FB /* AcronymSearchRepositoryContainerFactory.swift */,
+				3CE8869626DA23A4001635FB /* AcronymSearchRepositoryFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		3CE8869B26DA41CA001635FB /* RemoteDataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				3CE8869C26DA4203001635FB /* AcronymSearchRemoteStore.swift */,
+			);
+			path = RemoteDataLayer;
+			sourceTree = "<group>";
+		};
+		3CE886A726DA608B001635FB /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				3CE8878826DB8404001635FB /* APIConfigurator */,
+				3CE886C826DA6D6B001635FB /* Protocols */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		3CE886C826DA6D6B001635FB /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				3CE886C926DA6D88001635FB /* Usable.swift */,
+				3CE886D126DA6DA2001635FB /* Parsable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		3CE886E326DA8033001635FB /* Parsables */ = {
+			isa = PBXGroup;
+			children = (
+				3CE886E426DA804A001635FB /* AcronymsParsableModel.swift */,
+			);
+			path = Parsables;
+			sourceTree = "<group>";
+		};
+		3CE886F626DA8188001635FB /* Usables */ = {
+			isa = PBXGroup;
+			children = (
+				3CE886F726DA81DF001635FB /* AcronymsUsablesModel.swift */,
+			);
+			path = Usables;
+			sourceTree = "<group>";
+		};
+		3CE8878826DB8404001635FB /* APIConfigurator */ = {
+			isa = PBXGroup;
+			children = (
+				3CE8870826DA9786001635FB /* APIConfigurableProtocol.swift */,
+				3CE886C326DA6BB5001635FB /* Mappables.swift */,
+				3CE886D926DA6F3C001635FB /* APIRequestExecuter.swift */,
+				3CE8879426DBB2E6001635FB /* APIURLRequestCreater.swift */,
+				3CE8879926DBB340001635FB /* UrlRequestError.swift */,
+				3CE887A326DBCA5E001635FB /* APIResponseParser.swift */,
+			);
+			path = APIConfigurator;
+			sourceTree = "<group>";
+		};
+		3CEF7D6526D9230F00C5EEBC = {
+			isa = PBXGroup;
+			children = (
+				3CEF7D7026D9230F00C5EEBC /* AcronymApplication */,
+				3CEF7D8726D9231200C5EEBC /* AcronymApplicationTests */,
+				3CEF7D9226D9231200C5EEBC /* AcronymApplicationUITests */,
+				3CEF7D6F26D9230F00C5EEBC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3CEF7D6F26D9230F00C5EEBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CEF7D6E26D9230F00C5EEBC /* AcronymApplication.app */,
+				3CEF7D8426D9231200C5EEBC /* AcronymApplicationTests.xctest */,
+				3CEF7D8F26D9231200C5EEBC /* AcronymApplicationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CEF7D7026D9230F00C5EEBC /* AcronymApplication */ = {
+			isa = PBXGroup;
+			children = (
+				3CEF7D7126D9230F00C5EEBC /* AppDelegate.swift */,
+				3CEF7D7326D9230F00C5EEBC /* SceneDelegate.swift */,
+				3CD176FF26E15D5F00D82EB8 /* Mock */,
+				3C9A856C26DEA1400030A125 /* Extension */,
+				3C9A856B26DEA10C0030A125 /* AcronymNetworkServices */,
+				3CE886A726DA608B001635FB /* NetworkManager */,
+				3CE8865926D94BC4001635FB /* DataLayer */,
+				3CE8863A26D92703001635FB /* Storyboard */,
+				3CE8863926D926F9001635FB /* Controller */,
+				3CE8863826D926ED001635FB /* View */,
+				3CE8863726D926E0001635FB /* Presentor */,
+				3CE8863626D926C7001635FB /* Interactor */,
+				3CE8863526D926BF001635FB /* Builder */,
+				3CEF7D7A26D9231200C5EEBC /* Assets.xcassets */,
+				3CEF7D7C26D9231200C5EEBC /* LaunchScreen.storyboard */,
+				3CEF7D7F26D9231200C5EEBC /* Info.plist */,
+			);
+			path = AcronymApplication;
+			sourceTree = "<group>";
+		};
+		3CEF7D8726D9231200C5EEBC /* AcronymApplicationTests */ = {
+			isa = PBXGroup;
+			children = (
+				3CEF7D8A26D9231200C5EEBC /* Info.plist */,
+				3CD1770626E15E4900D82EB8 /* AcronymSearchPresenterTest.swift */,
+				3CD1773B26E1748300D82EB8 /* AcronymSearchInteractorTest.swift */,
+				3CD1774A26E1909800D82EB8 /* AcronymSearchRepositoryContainerTest.swift */,
+				3CD1775426E19AF900D82EB8 /* AcronymSearchRepositoryTest.swift */,
+				3CD1776326E204B800D82EB8 /* AcronymSearchRemoteDataStoreTest.swift */,
+				3CD1776826E2105F00D82EB8 /* AcronymSearchRemoteDataMapperTest.swift */,
+				3CD1776D26E231D500D82EB8 /* APIURLRequestCreaterTest.swift */,
+				3CD1777726E2676000D82EB8 /* AcronymAPIHandlerTest.swift */,
+			);
+			path = AcronymApplicationTests;
+			sourceTree = "<group>";
+		};
+		3CEF7D9226D9231200C5EEBC /* AcronymApplicationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3CEF7D9326D9231200C5EEBC /* AcronymApplicationUITests.swift */,
+				3CEF7D9526D9231200C5EEBC /* Info.plist */,
+			);
+			path = AcronymApplicationUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3CEF7D6D26D9230F00C5EEBC /* AcronymApplication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CEF7D9826D9231200C5EEBC /* Build configuration list for PBXNativeTarget "AcronymApplication" */;
+			buildPhases = (
+				3CEF7D6A26D9230F00C5EEBC /* Sources */,
+				3CEF7D6B26D9230F00C5EEBC /* Frameworks */,
+				3CEF7D6C26D9230F00C5EEBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AcronymApplication;
+			productName = AcronymApplication;
+			productReference = 3CEF7D6E26D9230F00C5EEBC /* AcronymApplication.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3CEF7D8326D9231200C5EEBC /* AcronymApplicationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CEF7D9B26D9231200C5EEBC /* Build configuration list for PBXNativeTarget "AcronymApplicationTests" */;
+			buildPhases = (
+				3CEF7D8026D9231200C5EEBC /* Sources */,
+				3CEF7D8126D9231200C5EEBC /* Frameworks */,
+				3CEF7D8226D9231200C5EEBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CEF7D8626D9231200C5EEBC /* PBXTargetDependency */,
+			);
+			name = AcronymApplicationTests;
+			productName = AcronymApplicationTests;
+			productReference = 3CEF7D8426D9231200C5EEBC /* AcronymApplicationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3CEF7D8E26D9231200C5EEBC /* AcronymApplicationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CEF7D9E26D9231200C5EEBC /* Build configuration list for PBXNativeTarget "AcronymApplicationUITests" */;
+			buildPhases = (
+				3CEF7D8B26D9231200C5EEBC /* Sources */,
+				3CEF7D8C26D9231200C5EEBC /* Frameworks */,
+				3CEF7D8D26D9231200C5EEBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CEF7D9126D9231200C5EEBC /* PBXTargetDependency */,
+			);
+			name = AcronymApplicationUITests;
+			productName = AcronymApplicationUITests;
+			productReference = 3CEF7D8F26D9231200C5EEBC /* AcronymApplicationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3CEF7D6626D9230F00C5EEBC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1230;
+				ORGANIZATIONNAME = "Subhajit Paul";
+				TargetAttributes = {
+					3CEF7D6D26D9230F00C5EEBC = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					3CEF7D8326D9231200C5EEBC = {
+						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1230;
+						TestTargetID = 3CEF7D6D26D9230F00C5EEBC;
+					};
+					3CEF7D8E26D9231200C5EEBC = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 3CEF7D6D26D9230F00C5EEBC;
+					};
+				};
+			};
+			buildConfigurationList = 3CEF7D6926D9230F00C5EEBC /* Build configuration list for PBXProject "AcronymApplication" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3CEF7D6526D9230F00C5EEBC;
+			productRefGroup = 3CEF7D6F26D9230F00C5EEBC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3CEF7D6D26D9230F00C5EEBC /* AcronymApplication */,
+				3CEF7D8326D9231200C5EEBC /* AcronymApplicationTests */,
+				3CEF7D8E26D9231200C5EEBC /* AcronymApplicationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3CEF7D6C26D9230F00C5EEBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CEF7D7E26D9231200C5EEBC /* LaunchScreen.storyboard in Resources */,
+				3CE8865226D93764001635FB /* AcronymSearchCell.xib in Resources */,
+				3CEF7D7B26D9231200C5EEBC /* Assets.xcassets in Resources */,
+				3CEF7D7926D9230F00C5EEBC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CEF7D8226D9231200C5EEBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CEF7D8D26D9231200C5EEBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CEF7D6A26D9230F00C5EEBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CE8870926DA9786001635FB /* APIConfigurableProtocol.swift in Sources */,
+				3CD1774126E1755A00D82EB8 /* AcronymSearchRepositoryContainerMock.swift in Sources */,
+				3CD176FB26E1566800D82EB8 /* AcronymSearchBarServices.swift in Sources */,
+				3CD1774626E180E800D82EB8 /* AcronymSearchPresenterMock.swift in Sources */,
+				3CD1777D26E29CE600D82EB8 /* AcronymSearchUrlSessionMock.swift in Sources */,
+				3CE886F826DA81DF001635FB /* AcronymsUsablesModel.swift in Sources */,
+				3CE886A926DA62CE001635FB /* AcronymAPIHandlerProtocol.swift in Sources */,
+				3CD1771426E161C600D82EB8 /* MockEnums.swift in Sources */,
+				3CE8879F26DBB3BA001635FB /* StringExtension.swift in Sources */,
+				3CE8862926D92499001635FB /* AcronymSearchInteractor.swift in Sources */,
+				3CE8879526DBB2E6001635FB /* APIURLRequestCreater.swift in Sources */,
+				3CE886CA26DA6D88001635FB /* Usable.swift in Sources */,
+				3CD1778226E29E8D00D82EB8 /* URLSessionMock.swift in Sources */,
+				3CD1775026E1919E00D82EB8 /* AcronymSearchRepositoryMock.swift in Sources */,
+				3CE8862A26D92499001635FB /* AcronymSearchView.swift in Sources */,
+				3CE887A426DBCA5E001635FB /* APIResponseParser.swift in Sources */,
+				3CE8877226DAD306001635FB /* AcronymSearchParamater.swift in Sources */,
+				3CE8876C26DAD16A001635FB /* AcronymSearchRequestCreater.swift in Sources */,
+				3CE886E726DA804A001635FB /* AcronymsParsableModel.swift in Sources */,
+				3CD1775F26E1EFB400D82EB8 /* AcronymAPIHandlerMock.swift in Sources */,
+				3CD1775A26E19BD900D82EB8 /* AcronymSearchRemoteDatastoreMock.swift in Sources */,
+				3CE8869D26DA4203001635FB /* AcronymSearchRemoteStore.swift in Sources */,
+				3CE8864026D931F3001635FB /* AcronymSearchTableViewServices.swift in Sources */,
+				3CE8864A26D93584001635FB /* NSViewExtension.swift in Sources */,
+				3CE8866526D94D31001635FB /* AcronymSearchRepository.swift in Sources */,
+				3CE8869726DA23A4001635FB /* AcronymSearchRepositoryFactory.swift in Sources */,
+				3CE8862726D92498001635FB /* AcronymSearchViewController.swift in Sources */,
+				3CE886D226DA6DA2001635FB /* Parsable.swift in Sources */,
+				3CEF7D7226D9230F00C5EEBC /* AppDelegate.swift in Sources */,
+				3CE8879A26DBB340001635FB /* UrlRequestError.swift in Sources */,
+				3CE8862526D92498001635FB /* AcronymSearchPresenter.swift in Sources */,
+				3CE886DF26DA7940001635FB /* AcronymAPIHandler.swift in Sources */,
+				3CE886C426DA6BB5001635FB /* Mappables.swift in Sources */,
+				3CE886DA26DA6F3C001635FB /* APIRequestExecuter.swift in Sources */,
+				3CE8865126D93764001635FB /* AcronymSearchCell.swift in Sources */,
+				3CD1773726E16D1500D82EB8 /* AcronymSearchControllerMock.swift in Sources */,
+				3CEF7D7426D9230F00C5EEBC /* SceneDelegate.swift in Sources */,
+				3CE8878D26DB847A001635FB /* AcronymSearchRemoteDataMapper.swift in Sources */,
+				3CE8866E26D94E94001635FB /* AcronymSearchRepositoryContainerFactory.swift in Sources */,
+				3CE8862826D92499001635FB /* AcronymSearchBuilder.swift in Sources */,
+				3CD1770C26E15EB200D82EB8 /* AcronymSearchInteractorMock.swift in Sources */,
+				3CE8865C26D94C09001635FB /* AcronymSearchRepositoryContainer.swift in Sources */,
+				3CD1777326E2482D00D82EB8 /* MockAPIConfigurator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CEF7D8026D9231200C5EEBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CD1776926E2105F00D82EB8 /* AcronymSearchRemoteDataMapperTest.swift in Sources */,
+				3CD1773C26E1748300D82EB8 /* AcronymSearchInteractorTest.swift in Sources */,
+				3CD1775526E19AF900D82EB8 /* AcronymSearchRepositoryTest.swift in Sources */,
+				3CD1776426E204B800D82EB8 /* AcronymSearchRemoteDataStoreTest.swift in Sources */,
+				3CD1776E26E231D500D82EB8 /* APIURLRequestCreaterTest.swift in Sources */,
+				3CD1774B26E1909800D82EB8 /* AcronymSearchRepositoryContainerTest.swift in Sources */,
+				3CD1770726E15E4900D82EB8 /* AcronymSearchPresenterTest.swift in Sources */,
+				3CD1777826E2676000D82EB8 /* AcronymAPIHandlerTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CEF7D8B26D9231200C5EEBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CEF7D9426D9231200C5EEBC /* AcronymApplicationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3CEF7D8626D9231200C5EEBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CEF7D6D26D9230F00C5EEBC /* AcronymApplication */;
+			targetProxy = 3CEF7D8526D9231200C5EEBC /* PBXContainerItemProxy */;
+		};
+		3CEF7D9126D9231200C5EEBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CEF7D6D26D9230F00C5EEBC /* AcronymApplication */;
+			targetProxy = 3CEF7D9026D9231200C5EEBC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3CEF7D7726D9230F00C5EEBC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CEF7D7826D9230F00C5EEBC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3CEF7D7C26D9231200C5EEBC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CEF7D7D26D9231200C5EEBC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3CEF7D9626D9231200C5EEBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3CEF7D9726D9231200C5EEBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3CEF7D9926D9231200C5EEBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AcronymApplication/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Nisum.AcronymApplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3CEF7D9A26D9231200C5EEBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AcronymApplication/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Nisum.AcronymApplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3CEF7D9C26D9231200C5EEBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AcronymApplicationTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Nisum.AcronymApplicationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AcronymApplication.app/AcronymApplication";
+			};
+			name = Debug;
+		};
+		3CEF7D9D26D9231200C5EEBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AcronymApplicationTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Nisum.AcronymApplicationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AcronymApplication.app/AcronymApplication";
+			};
+			name = Release;
+		};
+		3CEF7D9F26D9231200C5EEBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AcronymApplicationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Nisum.AcronymApplicationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AcronymApplication;
+			};
+			name = Debug;
+		};
+		3CEF7DA026D9231200C5EEBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AcronymApplicationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Nisum.AcronymApplicationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AcronymApplication;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3CEF7D6926D9230F00C5EEBC /* Build configuration list for PBXProject "AcronymApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CEF7D9626D9231200C5EEBC /* Debug */,
+				3CEF7D9726D9231200C5EEBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CEF7D9826D9231200C5EEBC /* Build configuration list for PBXNativeTarget "AcronymApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CEF7D9926D9231200C5EEBC /* Debug */,
+				3CEF7D9A26D9231200C5EEBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CEF7D9B26D9231200C5EEBC /* Build configuration list for PBXNativeTarget "AcronymApplicationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CEF7D9C26D9231200C5EEBC /* Debug */,
+				3CEF7D9D26D9231200C5EEBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CEF7D9E26D9231200C5EEBC /* Build configuration list for PBXNativeTarget "AcronymApplicationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CEF7D9F26D9231200C5EEBC /* Debug */,
+				3CEF7DA026D9231200C5EEBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3CEF7D6626D9230F00C5EEBC /* Project object */;
+}

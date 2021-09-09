@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7ai-vD-mLb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Acronym Search View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="AcronymSearchViewController" id="BYZ-38-t0r" customClass="AcronymSearchViewController" customModule="AcronymApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="AcronymSearchView" customModule="AcronymApplication" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="YBO-71-7ty">
+                                <rect key="frame" x="0.0" y="88" width="414" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="bYq-dq-DEG"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vv1-Ti-kVb">
+                                <rect key="frame" x="0.0" y="148" width="414" height="714"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YBO-71-7ty" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0Eg-rL-EJo"/>
+                            <constraint firstItem="Vv1-Ti-kVb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3ec-EF-zku"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vv1-Ti-kVb" secondAttribute="trailing" id="DEA-ef-s99"/>
+                            <constraint firstItem="YBO-71-7ty" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="KyH-qr-Hd5"/>
+                            <constraint firstItem="YBO-71-7ty" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="S1G-VR-in7"/>
+                            <constraint firstItem="Vv1-Ti-kVb" firstAttribute="top" secondItem="YBO-71-7ty" secondAttribute="bottom" id="iJw-an-Dwb"/>
+                            <constraint firstItem="Vv1-Ti-kVb" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="wyN-C9-fmW"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="mainTableView" destination="Vv1-Ti-kVb" id="f8J-4x-rUd"/>
+                            <outlet property="searchBar" destination="YBO-71-7ty" id="PG3-jh-PRB"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="E7c-gx-jnQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="997.10144927536237" y="97.767857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="UXe-nf-atc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7ai-vD-mLb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dCK-oz-AbY">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="B0T-0j-2jk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S2s-d7-zy8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="86.956521739130437" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
